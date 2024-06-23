@@ -16,13 +16,23 @@
 
 #Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 
-num1 = int(input("Digite um número: "))
-num2 = int(input("Digite um número: "))
-multi = num1 * num2
-print(f'O primeiro número digitado foi: {num1} e o segundo foi {num2}. A soma é igual a: {multi}')
+## num1 = int(input("Digite um número: "))
+## num2 = int(input("Digite um número: "))
+## multi = num1 * num2
+## print(f'O primeiro número digitado foi: {num1} e o segundo foi {num2}. A soma é igual a: {multi}')
 
 #Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
+    # num1 = int(input("Digite um número: "))
+    # num2 = int(input("Digite um número: "))
+    # divi  = num1 / num2
+    # print(f'O primeiro número digitado foi: {num1} e o segundo foi {num2}. A divisão é igual a: {divi}')
+
+
 #Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+
+num3 = int(input("Digite um número:"))
+quadrado = num3 ** 2
+print(quadrado)
 
 #Números de Ponto Flutuante (float)
 
