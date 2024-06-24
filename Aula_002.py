@@ -72,13 +72,29 @@
 # Strings (str)
 
 #Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
-texto = input("Digite seu nome: ")
-print(texto.upper())
-#Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
-#Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
-#Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
-#Escreva um programa que concatene duas strings fornecidas pelo usuário.
+    # texto = input("Digite seu nome: ")
+    # print(texto.upper())
 
+#Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+    # texto = input("Digite seu nome: ")
+    # print(texto.lower())
+
+#Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+    # texto = input("Digite um texto: ")
+    # print(texto.strip())
+
+#Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+    # texto = input("Digite uma data dd/mm/aaaa: ")
+    # lista = texto.split("/")
+    # print(lista[0])
+    # print(lista[1])
+    # print(lista[2])
+
+#Escreva um programa que concatene duas strings fornecidas pelo usuário.
+texto1 = input("Digite um texto: ")
+texto2 = input("Digite outro texto: ")
+concatenado = texto1 + texto2 
+print(concatenado)
 #Booleanos (bool)
 
 #Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
