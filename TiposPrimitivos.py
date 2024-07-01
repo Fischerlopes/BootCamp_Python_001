@@ -114,7 +114,17 @@
     # print(change) 
 
 #Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
-num1 = int(input("Digite um número: "))
-num2 = int(input("Digite um número: "))
-print(num1 == num2)
+    # num1 = int(input("Digite um número: "))
+    # num2 = int(input("Digite um número: "))
+    # if num1 == num2:
+    #     print("True")
+    # else:
+    #     print("False")
+
 #Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+    # num1 = int(input("Digite um número: "))
+    # num2 = int(input("Digite um número: "))
+    # if num1 != num2:
+    #     print("True")
+    # else:
+    #     print("False")
