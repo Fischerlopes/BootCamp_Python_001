@@ -4,11 +4,29 @@
 # garantir que a entrada seja numérica, tratando qualquer ValueError. 
 # Imprima o resultado em Fahrenheit ou uma mensagem de erro se a entrada não for válida.
 
+try:
+    tempcelsius = int(input("Digite a temperatura em º Celsius:"))
+    fahrenheit = (tempcelsius * 1.8) + 32
+    print(f'A temperatura é Fahrenheit é : {fahrenheit}')
+
+except ValueError:
+    print("Você digitou um valor errado")
+
 # Exercício 22: Verificador de Palíndromo
 # Crie um programa que verifica se uma palavra ou frase é um palíndromo 
 # (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). 
 # Utilize try-except para garantir que a entrada seja uma string. 
 # Dica: Utilize a função isinstance() para verificar o tipo da entrada.
+
+# a = input("Digite um Palíndromo: ")
+
+# reversa = lista.reverse()
+# if lista == reversa:
+#     print(f'A palavra {lista} é um palíndromo')
+# else:
+#     print(f'A palavra {lista} não é um palíndromo')
+
+
 
 # Exercício 23: Calculadora Simples
 # Desenvolva uma calculadora simples que aceite duas entradas numéricas e 
@@ -32,8 +50,8 @@
 
 
 
-numero = 10
-if isinstance(numero, int):
-    print("A variável é um inteiro.")
-else:
-    print("A variável não é um inteiro.")
+# numero = 10
+# if isinstance(numero, int):
+#     print("A variável é um inteiro.")
+# else:
+#     print("A variável não é um inteiro.")
