@@ -4,13 +4,13 @@
 # garantir que a entrada seja numérica, tratando qualquer ValueError. 
 # Imprima o resultado em Fahrenheit ou uma mensagem de erro se a entrada não for válida.
 
-try:
-    tempcelsius = int(input("Digite a temperatura em º Celsius:"))
-    fahrenheit = (tempcelsius * 1.8) + 32
-    print(f'A temperatura é Fahrenheit é : {fahrenheit}')
+    # try:
+    #     tempcelsius = int(input("Digite a temperatura em º Celsius:"))
+    #     fahrenheit = (tempcelsius * 1.8) + 32
+    #     print(f'A temperatura é Fahrenheit é : {fahrenheit}')
 
-except ValueError:
-    print("Você digitou um valor errado")
+    # except ValueError:
+    #     print("Você digitou um valor errado")
 
 # Exercício 22: Verificador de Palíndromo
 # Crie um programa que verifica se uma palavra ou frase é um palíndromo 
@@ -18,14 +18,19 @@ except ValueError:
 # Utilize try-except para garantir que a entrada seja uma string. 
 # Dica: Utilize a função isinstance() para verificar o tipo da entrada.
 
-# a = input("Digite um Palíndromo: ")
+    # try:
+    #     a = input("Digite um Palíndromo: ")
 
-# reversa = lista.reverse()
-# if lista == reversa:
-#     print(f'A palavra {lista} é um palíndromo')
-# else:
-#     print(f'A palavra {lista} não é um palíndromo')
+    #     if isinstance(a, str):
+    #         if a == a[::-1]:
+    #             print(f'A palavra {a} é um palíndromo')
+    #         else:
+    #             print(f'A palavra {a} não é um palíndromo')
+    #     else:
+    #         print(f'{a} não é uma string')
 
+    # except TypeError:
+    #     print("erro") 
 
 
 # Exercício 23: Calculadora Simples
@@ -34,6 +39,31 @@ except ValueError:
 # Use try-except para lidar com divisões por zero e entradas não numéricas. 
 # Utilize if-elif-else para realizar a operação matemática baseada no operador fornecido. 
 # Imprima o resultado ou uma mensagem de erro apropriada.
+
+try:
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    operacao = input("Escolha uma operação: Adi /  Multi / Sub / Div: ")
+
+    if operacao.lower() == "adi":
+        resultado = num1 + num2
+    elif operacao.lower() == "multi":
+        resultado = num1 * num2
+    elif operacao.lower() == "sub":
+        resultado = num1 - num2   
+    elif operacao.lower() == "div":
+        resultado = num1 / num2
+    else: print("Você digitou uma operação errada.")
+    print(resultado)
+except ValueError:
+    print("Você digitou um caracter inválido")
+
+except ZeroDivisionError:
+    print("Não é possível dividir um número por zero")  
+
+
+
+
 
 # Exercício 24: Classificador de Números
 # Escreva um programa que solicite ao usuário para digitar um número.
