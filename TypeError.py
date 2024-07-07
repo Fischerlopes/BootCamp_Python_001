@@ -40,29 +40,26 @@
 # Utilize if-elif-else para realizar a operação matemática baseada no operador fornecido. 
 # Imprima o resultado ou uma mensagem de erro apropriada.
 
-try:
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
-    operacao = input("Escolha uma operação: Adi /  Multi / Sub / Div: ")
+    # try:
+    #     num1 = float(input("Digite o primeiro número: "))
+    #     num2 = float(input("Digite o segundo número: "))
+    #     operacao = input("Escolha uma operação: Adi /  Multi / Sub / Div: ")
 
-    if operacao.lower() == "adi":
-        resultado = num1 + num2
-    elif operacao.lower() == "multi":
-        resultado = num1 * num2
-    elif operacao.lower() == "sub":
-        resultado = num1 - num2   
-    elif operacao.lower() == "div":
-        resultado = num1 / num2
-    else: print("Você digitou uma operação errada.")
-    print(resultado)
-except ValueError:
-    print("Você digitou um caracter inválido")
+    #     if operacao.lower() == "adi":
+    #         resultado = num1 + num2
+    #     elif operacao.lower() == "multi":
+    #         resultado = num1 * num2
+    #     elif operacao.lower() == "sub":
+    #         resultado = num1 - num2   
+    #     elif operacao.lower() == "div":
+    #         resultado = num1 / num2
+    #     else: print("Você digitou uma operação errada.")
+    #     print(resultado)
+    # except ValueError:
+    #     print("Você digitou um caracter inválido")
 
-except ZeroDivisionError:
-    print("Não é possível dividir um número por zero")  
-
-
-
+    # except ZeroDivisionError:
+    #     print("Não é possível dividir um número por zero")  
 
 
 # Exercício 24: Classificador de Números
@@ -70,6 +67,26 @@ except ZeroDivisionError:
 #  Utilize try-except para assegurar que a entrada seja numérica e 
 # utilize if-elif-else para classificar o número como "positivo", "negativo" ou "zero". 
 # Adicionalmente, identifique se o número é "par" ou "ímpar".
+
+try:
+    num = float(input("Digite um número qualquer: "))
+    resultado = ""
+    tipo = ""
+    if num > 0:
+        resultado = "Positivo"
+    elif num < 0:
+        resultado = "Negativo"
+    else: 
+        resultado = "Zero"
+    if num % 2 == 0:
+        tipo = "Par"
+    else: 
+        tipo = "Ímpar"
+    
+    print(f'O número que você digitou foi: {num} e ele é: {resultado} e {tipo}')
+
+except ValueError:
+    print("Você não digitou um número.")
 
 # Exercício 25: Conversão de Tipo com Validação
 # Crie um script que solicite ao usuário uma lista de números separados por vírgula. 
@@ -80,8 +97,3 @@ except ZeroDivisionError:
 
 
 
-# numero = 10
-# if isinstance(numero, int):
-#     print("A variável é um inteiro.")
-# else:
-#     print("A variável não é um inteiro.")
