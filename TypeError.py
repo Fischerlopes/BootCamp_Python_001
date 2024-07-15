@@ -68,25 +68,25 @@
 # utilize if-elif-else para classificar o número como "positivo", "negativo" ou "zero". 
 # Adicionalmente, identifique se o número é "par" ou "ímpar".
 
-try:
-    num = float(input("Digite um número qualquer: "))
-    resultado = ""
-    tipo = ""
-    if num > 0:
-        resultado = "Positivo"
-    elif num < 0:
-        resultado = "Negativo"
-    else: 
-        resultado = "Zero"
-    if num % 2 == 0:
-        tipo = "Par"
-    else: 
-        tipo = "Ímpar"
+    # try:
+    #     num = float(input("Digite um número qualquer: "))
+    #     resultado = ""
+    #     tipo = ""
+    #     if num > 0:
+    #         resultado = "Positivo"
+    #     elif num < 0:
+    #         resultado = "Negativo"
+    #     else: 
+    #         resultado = "Zero"
+    #     if num % 2 == 0:
+    #         tipo = "Par"
+    #     else: 
+    #         tipo = "Ímpar"
     
-    print(f'O número que você digitou foi: {num} e ele é: {resultado} e {tipo}')
+    #     print(f'O número que você digitou foi: {num} e ele é: {resultado} e {tipo}')
 
-except ValueError:
-    print("Você não digitou um número.")
+    # except ValueError:
+    #     print("Você não digitou um número.")
 
 # Exercício 25: Conversão de Tipo com Validação
 # Crie um script que solicite ao usuário uma lista de números separados por vírgula. 
@@ -95,5 +95,21 @@ except ValueError:
 # elemento da lista convertida é um inteiro. Se a conversão falhar ou um elemento não for um inteiro, 
 # imprima uma mensagem de erro. Se a conversão for bem-sucedida para todos os elementos, imprima a lista de inteiros.
 
+
+try:
+    entrada = input("Digite vários números separados por vírgula:")
+    lista = list(entrada.split(","))
+    lista2 =[]
+    for a in lista:
+        a = int(a)
+        lista2.append(a)
+    for b in lista2:
+        if isinstance(b, int):
+            print("ok")
+        else:
+            print("Error")
+    print(lista2)
+except ValueError:
+    print("Você digitou um valor errado")
 
 
