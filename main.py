@@ -1,5 +1,3 @@
-
-
 # lista =[]
 # quantidade_notas = int(input("Digite a quantidade de notas: "))
 
