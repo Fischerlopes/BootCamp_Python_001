@@ -96,20 +96,20 @@
 # imprima uma mensagem de erro. Se a conversão for bem-sucedida para todos os elementos, imprima a lista de inteiros.
 
 
-try:
-    entrada = input("Digite vários números separados por vírgula:")
-    lista = list(entrada.split(","))
-    lista2 =[]
-    for a in lista:
-        a = int(a)
-        lista2.append(a)
-    for b in lista2:
-        if isinstance(b, int):
-            print("ok")
-        else:
-            print("Error")
-    print(lista2)
-except ValueError:
-    print("Você digitou um valor errado")
+    # try:
+    #     entrada = input("Digite vários números separados por vírgula:")
+    #     lista = list(entrada.split(","))
+    #     lista2 =[]
+    #     for a in lista:
+    #         a = int(a)
+    #         lista2.append(a)
+    #     for b in lista2:
+    #         if isinstance(b, int):
+    #             print("ok")
+    #         else:
+    #             print("Error")
+    #     print(lista2)
+    # except ValueError:
+    #     print("Você digitou um valor errado")
 
 
